@@ -1,0 +1,231 @@
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+div {
+  display: block;
+}
+#root {
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 13 17 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(143 143 148 / var(--tw-text-opacity));
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  max-width: 100%;
+  height: auto;
+  max-height: 2000px;
+}
+
+.item-block__image {
+  width: 260px;
+}
+.gap {
+  gap: 0.75rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.title {
+  align-items: center;
+}
+
+.container a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+.bg-primary {
+  /* From https://css.glass */
+  background: rgba(225, 188, 209, 0.67);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
+  border: 1px solid rgba(225, 188, 209, 0.75);
+}
+.bg-main {
+  /* From https://css.glass */
+  background: rgba(47, 45, 52, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border: 1px solid rgba(47, 45, 52, 0.75);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.bg-img-card {
+  /* From https://css.glass */
+  background: rgba(134, 134, 134, 0.44);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(134, 134, 134, 0.3);
+}
+.card-block-bottom {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.card-price {
+  font-weight: bold;
+  color: #fff;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.buy-card {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+  text-align: center;
+  margin-bottom: 65px;
+  img {
+    height: 300px;
+    object-fit: cover;
+    margin-top: 25px;
+    width: 300px;
+  }
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.05;
+  padding: 0.5rem 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.margin-sides {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(21 21 25 / var(--tw-border-opacity));
+}
+.border-2 {
+  border-width: 2px;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.active {
+  color: #fff;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(225, 188, 209);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.content {
+  margin: 50px;
+  height: 100%;
+  min-height: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buy-content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.color-white {
+  color: #fff;
+}
+
+.auto-font {
+  h1 {
+    font-size: auto;
+  }
+}
