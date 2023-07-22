@@ -48,7 +48,9 @@ const Header = () => {
           Продать
         </Link>
       </div>
-      <a class="btn bg-primary">Корзина</a>
+      <Link className="btn bg-primary" to="/cart" onClick={() => dispatch(changeActivePage(3))}>
+        Корзина
+      </Link>
     </header>
   );
 };
