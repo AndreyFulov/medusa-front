@@ -11,6 +11,7 @@ const BuyCard = ({ id, title, image, desc, price }) => {
       price,
     };
     dispatch(addItem(item));
+    console.log(item);
   };
   return (
     <div className="buy-card bg-main">

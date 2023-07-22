@@ -7,7 +7,7 @@ const Buy = () => {
     <div className="buy-content-grid content py-6 px-6">
       {items.map((obj) => (
         <BuyCard
-          key={obj.id}
+          id={obj.id}
           title={obj.title}
           image={obj.imageUrl}
           desc={obj.desc}
