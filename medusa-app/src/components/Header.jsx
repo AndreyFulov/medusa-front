@@ -15,15 +15,16 @@ const Header = () => {
         </a>
       </div>
       <div>
-        <Link
-          to="/"
-          class={
-            +activePage === 0
-              ? 'hover-underline-animation margin-sides active'
-              : 'hover-underline-animation margin-sides'
-          }
-          onClick={() => dispatch(changeActivePage(0))}>
-          <a>Главная</a>
+        <Link to="/">
+          <div
+            class={
+              +activePage === 0
+                ? 'hover-underline-animation margin-sides active'
+                : 'hover-underline-animation margin-sides color-stantard'
+            }
+            onClick={() => dispatch(changeActivePage(0))}>
+            <a class="">Главная</a>
+          </div>
         </Link>
         <Link
           to="/buy"
@@ -31,7 +32,7 @@ const Header = () => {
           class={
             +activePage === 1
               ? 'hover-underline-animation margin-sides active'
-              : 'hover-underline-animation margin-sides'
+              : 'hover-underline-animation margin-sides color-stantard'
           }
           onClick={() => dispatch(changeActivePage(1))}>
           Купить
@@ -42,7 +43,7 @@ const Header = () => {
           class={
             +activePage === 2
               ? 'hover-underline-animation margin-sides active'
-              : 'hover-underline-animation margin-sides'
+              : 'hover-underline-animation margin-sides color-stantard'
           }
           onClick={() => dispatch(changeActivePage(2))}>
           Продать

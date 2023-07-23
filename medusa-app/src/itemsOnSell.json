@@ -4,55 +4,15 @@
     "imageUrl": "https://media.forgecdn.net/avatars/582/315/637948153240055358.png",
     "title": "Тотем",
     "desc": "Спасет вас от смерти!",
-    "price": "1"
+    "price": "1",
+    "amount": "10"
   },
   {
     "id": "1",
     "imageUrl": "https://freepngimg.com/thumb/minecraft/94808-square-angle-pocket-edition-pickaxe-minecraft.png",
     "title": "Кирка",
     "desc": "Жеская можна аров накопать!",
-    "price": "15"
-  },
-  {
-    "id": "2",
-    "imageUrl": "https://media.forgecdn.net/avatars/582/315/637948153240055358.png",
-    "title": "Тотем",
-    "desc": "Спасет вас от смерти!",
-    "price": "1"
-  },
-  {
-    "id": "3",
-    "imageUrl": "https://freepngimg.com/thumb/minecraft/94808-square-angle-pocket-edition-pickaxe-minecraft.png",
-    "title": "Кирка",
-    "desc": "Жеская можна аров накопать!",
-    "price": "15"
-  },
-  {
-    "id": "4",
-    "imageUrl": "https://media.forgecdn.net/avatars/582/315/637948153240055358.png",
-    "title": "Тотем",
-    "desc": "Спасет вас от смерти!",
-    "price": "1"
-  },
-  {
-    "id": "5",
-    "imageUrl": "https://freepngimg.com/thumb/minecraft/94808-square-angle-pocket-edition-pickaxe-minecraft.png",
-    "title": "Кирка",
-    "desc": "Жеская можна аров накопать!",
-    "price": "15"
-  },
-  {
-    "id": "6",
-    "imageUrl": "https://media.forgecdn.net/avatars/582/315/637948153240055358.png",
-    "title": "Тотем",
-    "desc": "Спасет вас от смерти!",
-    "price": "1"
-  },
-  {
-    "id": "7",
-    "imageUrl": "https://freepngimg.com/thumb/minecraft/94808-square-angle-pocket-edition-pickaxe-minecraft.png",
-    "title": "Кирка",
-    "desc": "Жеская можна аров накопать!",
-    "price": "15"
+    "price": "15",
+    "amount": "10"
   }
 ]

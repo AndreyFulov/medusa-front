@@ -10,6 +10,10 @@ function Cart() {
       {items.map((item) => (
         <CartItem {...item} />
       ))}
+      <div class="container flex py-6">
+        <h3>Итоговая цена: 100 ар.</h3>
+        <div class="btn bg-primary">Оплатить</div>
+      </div>
     </div>
   );
 }

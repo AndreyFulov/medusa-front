@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../redux/Slices/cartSlice';
-const BuyCard = ({ id, title, image, desc, price }) => {
+const BuyCard = ({ id, title, image, desc, price, amount }) => {
   const dispatch = useDispatch();
   const onClickAdd = () => {
     const item = {
@@ -9,6 +9,7 @@ const BuyCard = ({ id, title, image, desc, price }) => {
       title,
       image,
       price,
+      amount: amount - 1,
     };
     dispatch(addItem(item));
     console.log(item);
@@ -20,6 +21,7 @@ const BuyCard = ({ id, title, image, desc, price }) => {
       <p>{desc}</p>
       <div class="card-block-bottom">
         <div class="card-price">{price} ар.</div>
+
         <div class="btn bg-primary" onClick={onClickAdd}>
           <span>Добавить</span>
         </div>

@@ -26,6 +26,9 @@ body {
   --tw-text-opacity: 1;
   color: rgb(143 143 148 / var(--tw-text-opacity));
 }
+.color-stantard {
+  color: rgb(143 143 148 / var(--tw-text-opacity));
+}
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
@@ -63,13 +66,8 @@ img {
   font-weight: bold;
 }
 .bg-primary {
-  /* From https://css.glass */
-  background: rgba(225, 188, 209, 0.67);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11.8px);
-  -webkit-backdrop-filter: blur(11.8px);
-  border: 1px solid rgba(225, 188, 209, 0.75);
+  --tw-bg-opacity: 1;
+  background-color: rgb(101 99 238 / var(--tw-bg-opacity));
 }
 .bg-main {
   /* From https://css.glass */
@@ -186,6 +184,7 @@ img {
   cursor: pointer;
   text-decoration: none;
 }
+
 .active {
   color: #fff;
 }

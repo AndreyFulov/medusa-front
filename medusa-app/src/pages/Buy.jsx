@@ -3,6 +3,7 @@ import BuyCard from '../components/BuyCard';
 import items from '../itemsOnSell.json';
 
 const Buy = () => {
+  const itemsOnSale = items;
   return (
     <div className="buy-content-grid content py-6 px-6">
       {items.map((obj) => (
@@ -12,6 +13,7 @@ const Buy = () => {
           image={obj.imageUrl}
           desc={obj.desc}
           price={obj.price}
+          amount={obj.amount}
         />
       ))}
     </div>
